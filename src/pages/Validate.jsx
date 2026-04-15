@@ -1,10 +1,12 @@
 import { useState } from "react";
-import manta from "../services/manta";
+import events from "../../events.json";
 
 import Button from "../ui/Button";
 import Navigation from "../ui/Navigation";
 import { sileo } from "sileo";
 import EventCard from "../ui/EventCard";
+
+const REGISTRATIONS_STORAGE_KEY = "eventflow.registrations";
 
 function Validate() {
   const [ticketId, setTicketId] = useState("");
@@ -17,28 +19,22 @@ function Validate() {
     setLoading(true);
 
     try {
-      const res = await manta.fetchOneRecord({
-        table: "registrations",
-        where: { ticket_id: ticketId },
-        with: {
-          events: {
-            fields: ["title", "date", "location", "image", "featured", "id"],
-            on: {
-              from: "event_id",
-              to: "id",
-            },
-          },
-        },
-      });
+      const registrations = JSON.parse(
+        localStorage.getItem(REGISTRATIONS_STORAGE_KEY) || "[]",
+      );
+      const record = registrations.find(
+        (item) => item.ticket_id === ticketId.toUpperCase(),
+      );
 
-      const record = res?.data?.data;
       if (!record) {
         sileo.error({ title: "Ticket not found" });
         return;
       }
 
+      const matchedEvent = events.find((item) => item.id === record.event_id);
+
       sileo.success({ title: "Ticket validated successfully" });
-      setEvent(record?.events[0]);
+      setEvent(matchedEvent);
       setAttendee(record);
 
       setTicketId("");
@@ -138,7 +134,7 @@ function Validate() {
             title={event.title}
             date={event.date}
             location={event.location}
-            featured={JSON.parse(event.featured)}
+            featured={event.featured}
           />
         </div>
       )}

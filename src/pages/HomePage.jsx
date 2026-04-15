@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import manta from "../services/manta";
+import events from "../../events.json";
 
 import Navigation from "../ui/Navigation";
 import Button from "../ui/Button";
 import CardGrid from "../ui/CardGrid";
 import EventCard from "../ui/EventCard";
-import Loader from "../ui/Loader";
 
 function HomePage() {
   return (
@@ -39,30 +37,7 @@ function HomePage() {
 }
 
 function FeaturedEvents() {
-  const [featuredEvents, setFeaturedEvents] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    async function getFeaturedEvents() {
-      setLoading(true);
-
-      try {
-        const { data } = await manta.fetchAllRecords({
-          table: "events",
-          fields: ["title", "featured", "id", "date", "image", "location"],
-          where: { featured: "true" },
-        });
-
-        setFeaturedEvents(data);
-      } catch (err) {
-        console.error("Error fetching", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    getFeaturedEvents();
-  }, []);
+  const featuredEvents = events.filter((event) => event.featured);
 
   return (
     <section className="my-8 px-6 lg:px-20">
@@ -78,27 +53,23 @@ function FeaturedEvents() {
         </Link>
       </div>
 
-      {loading ? (
-        <Loader />
-      ) : (
-        <CardGrid>
-          {featuredEvents.length > 0 ? (
-            featuredEvents.map((event) => (
-              <EventCard
-                key={event.id}
-                id={event.id}
-                image={event.image}
-                title={event.title}
-                date={event.date}
-                location={event.location}
-                featured={JSON.parse(event.featured)}
-              />
-            ))
-          ) : (
-            <p></p>
-          )}
-        </CardGrid>
-      )}
+      <CardGrid>
+        {featuredEvents.length > 0 ? (
+          featuredEvents.map((event) => (
+            <EventCard
+              key={event.id}
+              id={event.id}
+              image={event.image}
+              title={event.title}
+              date={event.date}
+              location={event.location}
+              featured={event.featured}
+            />
+          ))
+        ) : (
+          <p></p>
+        )}
+      </CardGrid>
     </section>
   );
 }

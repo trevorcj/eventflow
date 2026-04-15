@@ -4,7 +4,7 @@ import { FaChevronLeft } from "react-icons/fa6";
 
 function Ticket() {
   const location = useLocation();
-  const { ticketId } = location.state;
+  const ticketId = location.state?.ticketId;
 
   return (
     <>
@@ -41,7 +41,9 @@ function Ticket() {
           </div>
 
           <div className=" px-4 py-6 space-y-6 text-center">
-            <p className="font-semibold text-sm uppercase text-tetiary">{`EVF-${ticketId}`}</p>
+            <p className="font-semibold text-sm uppercase text-tetiary">
+              {ticketId || "No ticket available"}
+            </p>
           </div>
 
           <div className="relative mt-10">

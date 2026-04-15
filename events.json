@@ -1,0 +1,74 @@
+[
+  {
+    "id": "personal-leadership-mastermind",
+    "title": "Personal Leadership for an Extraordinary Life: Visionary Women’s Mastermind",
+    "description": "Join our online preview of an amazing 6-month leadership program designed to support and empower you to create an extraordinary life. Ready to step into your power and live extraordinarily? Connect with inspiring women and start creating the life you’ve always dreamed of.",
+    "image": "https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?q=80&w=2078&auto=format&fit=crop",
+    "date": "2026-04-22T17:00:00Z",
+    "type": "online",
+    "location": "Online event",
+    "max_attendees": 100,
+    "featured": false,
+    "created_at": "2026-04-13T00:00:00Z"
+  },
+  {
+    "id": "frontend-developers-meetup-lagos",
+    "title": "Frontend Developers Meetup Lagos",
+    "description": "A casual meetup for frontend developers to connect, share ideas, and talk about real-world projects. Expect good conversations, networking, and a few live demos.",
+    "image": "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2070&auto=format&fit=crop",
+    "date": "2026-04-25T15:00:00Z",
+    "type": "physical",
+    "location": "Lagos, Nigeria",
+    "max_attendees": 80,
+    "featured": true,
+    "created_at": "2026-04-10T00:00:00Z"
+  },
+  {
+    "id": "startup-founders-hangout",
+    "title": "Startup Founders Hangout",
+    "description": "An evening with early-stage founders sharing their journeys, mistakes, and lessons from building in public. Great for anyone thinking about starting something.",
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2074&auto=format&fit=crop",
+    "date": "2026-04-28T18:30:00Z",
+    "type": "physical",
+    "location": "Abuja, Nigeria",
+    "max_attendees": 60,
+    "featured": true,
+    "created_at": "2026-04-12T00:00:00Z"
+  },
+  {
+    "id": "intro-to-product-design-workshop",
+    "title": "Intro to Product Design (Free Workshop)",
+    "description": "Learn the basics of product design, from user research to wireframing and prototyping. Perfect for beginners looking to get into design.",
+    "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop",
+    "date": "2026-03-30T14:00:00Z",
+    "type": "online",
+    "location": "Zoom",
+    "max_attendees": 150,
+    "featured": false,
+    "created_at": "2026-03-20T00:00:00Z"
+  },
+  {
+    "id": "ai-for-developers-smart-app",
+    "title": "AI for Developers: Build Your First Smart App",
+    "description": "A hands-on session where you’ll learn how to integrate AI into your apps. We’ll walk through real examples and simple workflows you can reuse.",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
+    "date": "2026-04-18T16:00:00Z",
+    "type": "online",
+    "location": "Online event",
+    "max_attendees": 120,
+    "featured": true,
+    "created_at": "2026-04-11T00:00:00Z"
+  },
+  {
+    "id": "design-systems-deep-dive",
+    "title": "Design Systems Deep Dive",
+    "description": "A focused session on building scalable design systems. Learn how to structure components, maintain consistency, and collaborate better with developers.",
+    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=2070&auto=format&fit=crop",
+    "date": "2026-03-25T10:00:00Z",
+    "type": "physical",
+    "location": "Ibadan, Nigeria",
+    "max_attendees": 50,
+    "featured": false,
+    "created_at": "2026-03-15T00:00:00Z"
+  }
+]
