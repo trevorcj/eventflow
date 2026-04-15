@@ -2,6 +2,8 @@
 
 Eventflow is a lightweight event discovery and ticketing app for browsing events, registering attendees, issuing tickets, and validating entry.
 
+[DEMO](https://tryeventflow.vercel.app/)
+
 ```text
 Generate React projects the right way with Klean, an opinionated initializer built on top of Vite.
 ```
