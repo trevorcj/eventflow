@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evt_9a8b7c6d",
+    "title": "Tulips at Twilight in Topeka",
+    "image": "https://images.unsplash.com/photo-1536622638768-9403a9d35a1a?q=80&",
+    "date": "2026-04-12T18:00:00Z",
+    "location": "Topeka, Kansas",
+    "description": "An evening walk through blooming tulip gardens under soft twilight skies.",
+    "featured": false,
+    "createdAt": 1712700000000,
+    "isRegistered": false
+  },
+  {
+    "id": "evt_a1b2c3d4",
+    "title": "Lagos Tech Connect Meetup",
+    "image": "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaCUyMGV2ZW50fGVufDB8fDB8fHww",
+    "date": "2026-05-02T10:00:00Z",
+    "location": "Lagos, Nigeria",
+    "description": "Meet developers, designers, and founders building the future.",
+    "featured": true,
+    "createdAt": 1712600000000,
+    "isRegistered": false
+  },
+  {
+    "id": "evt_x7y8z9w0",
+    "title": "Frontend Mastery Workshop",
+    "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMGV2ZW50fGVufDB8fDB8fHww",
+    "date": "2026-03-20T09:00:00Z",
+    "location": "Abuja, Nigeria",
+    "description": "Deep dive into modern frontend tools and patterns.",
+    "featured": false,
+    "createdAt": 1712000000000,
+    "isRegistered": true
+  },
+  {
+    "id": "evt_k2l3m4n5",
+    "title": "Design Systems Bootcamp",
+    "image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaCUyMGV2ZW50fGVufDB8fDB8fHww",
+    "date": "2026-04-25T14:00:00Z",
+    "location": "Accra, Ghana",
+    "description": "Learn how to build scalable design systems.",
+    "featured": false,
+    "createdAt": 1712300000000,
+    "isRegistered": false
+  },
+  {
+    "id": "evt_q1w2e3r4",
+    "title": "AI for Builders Conference",
+    "image": "https://images.unsplash.com/photo-1761223976379-04c361d3068a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMGV2ZW50JTIwYWl8ZW58MHx8MHx8fDA%3D",
+    "date": "2026-02-10T12:00:00Z",
+    "location": "Nairobi, Kenya",
+    "description": "Exploring AI tools for developers and startups.",
+    "featured": false,
+    "createdAt": 1711000000000,
+    "isRegistered": true
+  },
+  {
+    "id": "evt_u7v8w9x0",
+    "title": "Startup Pitch Night",
+    "image": "https://images.unsplash.com/photo-1576085898323-218337e3e43c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaCUyMGV2ZW50JTIwc3RhcnR1cHxlbnwwfHwwfHx8MA%3D%3D",
+    "date": "2026-06-01T17:00:00Z",
+    "location": "Cape Town, South Africa",
+    "description": "Pitch your startup and meet investors.",
+    "featured": true,
+    "createdAt": 1712800000000,
+    "isRegistered": false
+  }
+]

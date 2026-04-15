@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #f05537;
+  --color-secondary: #3d64ff;
+  --color-black: #121212;
+  --color-gray: #39364f;
+  --color-accent: #f8f7fa;
+  --color-tetiary: #1e0a3c;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-accent);
+  }
+}
+
+@layer components {
+  .event-details {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ticket-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-bottom: 6px;
+    cursor: pointer;
+  }
+  .ticket-input {
+    border: 1px solid;
+    padding: 10px 12px;
+    border-radius: 8px;
+    outline: none;
+    color: var(--color-gray);
+  }
+  .loader {
+    width: 28px;
+    height: 28px;
+    border: 5px solid var(--color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    60%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  @keyframes pulse {
+    0%,
+    60%,
+    100% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+  }
+}
